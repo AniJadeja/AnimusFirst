@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ActivitySignUp">
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.58"
+        android:contentDescription="@string/screen_draw"
+        android:src="@drawable/imvsingupdraw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide95V"
+        app:layout_constraintStart_toStartOf="@id/guide55V"
+        app:layout_constraintTop_toTopOf="@id/guide60H" />
+
+
+    <TextView
+        android:id="@+id/tvAppName"
+        style="@style/darkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hankrnd_bold"
+        android:letterSpacing="0.1"
+        android:text="@string/app_label"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/guide10H"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvScreenHeading"
+        style="@style/darkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/hankrnd_bold"
+        android:text="@string/sign_up"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@id/guide30H"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imvLoginBar"
+        style="@style/darkText"
+        android:layout_width="75dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/login_bar"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_line"
+        app:layout_constraintStart_toStartOf="@id/tvScreenHeading"
+        app:layout_constraintTop_toBottomOf="@id/tvScreenHeading" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/transparent"
+        android:fontFamily="@font/hankrnd_bold"
+        android:hint="@string/name"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide30H" />
+
+    <ImageView
+        style="@style/darkText"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/edit_text_back"
+        android:src="@drawable/ed_backline"
+        app:layout_constraintBottom_toBottomOf="@id/etName"
+        app:layout_constraintEnd_toEndOf="@id/etName"
+        app:layout_constraintStart_toStartOf="@id/etName" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent"
+        android:fontFamily="@font/hankrnd_bold"
+        android:hint="@string/mobile_number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etName" />
+
+    <ImageView
+        style="@style/darkText"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/edit_text_back"
+        android:src="@drawable/ed_backline"
+        app:layout_constraintBottom_toBottomOf="@id/etMobileNumber"
+        app:layout_constraintEnd_toEndOf="@id/etMobileNumber"
+        app:layout_constraintStart_toStartOf="@id/etMobileNumber" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-6dp"
+        android:backgroundTint="@color/accentColor"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="Send OTP"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/etMobileNumber"
+        app:layout_constraintEnd_toEndOf="@id/etMobileNumber"
+        app:shapeAppearanceOverlay="@style/otpShape" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent"
+        android:fontFamily="@font/hankrnd_bold"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMobileNumber" />
+
+    <ImageView
+        style="@style/darkText"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/edit_text_back"
+        android:src="@drawable/ed_backline"
+        app:layout_constraintBottom_toBottomOf="@id/etPassword"
+        app:layout_constraintEnd_toEndOf="@id/etPassword"
+        app:layout_constraintStart_toStartOf="@id/etPassword" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent"
+        android:fontFamily="@font/hankrnd_bold"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+    <ImageView
+        style="@style/darkText"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/edit_text_back"
+        android:src="@drawable/ed_backline"
+        app:layout_constraintBottom_toBottomOf="@id/etConfirmPassword"
+        app:layout_constraintEnd_toEndOf="@id/etConfirmPassword"
+        app:layout_constraintStart_toStartOf="@id/etConfirmPassword" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etOTP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent"
+        android:fontFamily="@font/hankrnd_bold"
+        android:hint="@string/enter_otp_here"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etConfirmPassword" />
+
+    <ImageView
+        style="@style/darkText"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/edit_text_back"
+        android:src="@drawable/ed_backline"
+        app:layout_constraintBottom_toBottomOf="@id/etOTP"
+        app:layout_constraintEnd_toEndOf="@id/etOTP"
+        app:layout_constraintStart_toStartOf="@id/etOTP" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        style="@style/primaryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/hankrnd_bold"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tvFriendlyNote"
+        app:layout_constraintEnd_toEndOf="@id/guide45V"
+        app:layout_constraintStart_toStartOf="@id/etOTP"
+        app:layout_constraintTop_toBottomOf="@id/etOTP" />
+
+
+    <TextView
+        android:id="@+id/tvFriendlyNote"
+        style="@style/lightText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/hankrnd_regular"
+        android:text="@string/friendly_note_signup"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide55V"
+        app:layout_constraintStart_toStartOf="@id/btnNext"
+        app:layout_constraintTop_toBottomOf="@id/btnNext" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide10H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide60H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide45H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide30H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide95V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide80V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide55V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide45V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

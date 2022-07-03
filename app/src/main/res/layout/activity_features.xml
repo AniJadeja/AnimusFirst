@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".Activities.ActivityFeatures">
+
+    <!--<include
+        android:layout_margin="20dp"
+        layout="@layout/pager_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+
+    <TextView
+        android:id="@+id/tvAppName"
+        style="@style/darkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hankrnd_bold"
+        android:letterSpacing="0.1"
+        android:text="@string/app_label"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/guide10H"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pagerFeatures"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guide80H"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guide20H">
+
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+
+    <TextView
+        android:id="@+id/swipeText"
+        style="@style/darkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:text="Swipe"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/guide20V"
+        app:layout_constraintTop_toBottomOf="@id/pagerFeatures" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAllRight"
+        style="@style/primaryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/hankrnd_bold"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="10dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="All Right"
+        android:textAllCaps="false"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/swipeText"
+        app:layout_constraintStart_toStartOf="@id/guide20V"
+        app:layout_constraintTop_toTopOf="@id/swipeText" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/arrow"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="3dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="@id/swipeText"
+        app:layout_constraintStart_toEndOf="@id/swipeText"
+        app:layout_constraintTop_toTopOf="@id/swipeText"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/accentColor"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/arrow" />
+
+
+    <!--<ImageView
+        android:id="@+id/arrow"
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:src="@drawable/arrow"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toTopOf="@id/swipeText"
+        app:layout_constraintTop_toBottomOf="@id/pagerFeatures"
+        app:layout_constraintStart_toEndOf="@id/swipeText"
+        app:tint="@color/accentColor"
+        />-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/swipeText">
+
+
+        <ImageView
+            android:id="@+id/indicatorPage0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/indicator_selected" />
+
+        <ImageView
+            android:id="@+id/indicatorPage1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/indicator_default" />
+
+        <ImageView
+            android:id="@+id/indicatorPage2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/indicator_default" />
+
+        <ImageView
+            android:id="@+id/indicatorPage3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/indicator_default" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide10H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide20V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide20H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide80H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide80V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

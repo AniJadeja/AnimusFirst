@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imvFeatureDraw"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:src="@drawable/aircraft"
+        app:layout_constraintBottom_toTopOf="@id/tvFeatureHeading"
+        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintStart_toStartOf="@id/guide20V"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFeatureHeading"
+        style="@style/darkText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Information In Your Hand"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/tvFeatureDescription"
+        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintStart_toStartOf="@id/guide20V"
+        app:layout_constraintTop_toBottomOf="@id/imvFeatureDraw" />
+
+    <TextView
+        android:id="@+id/tvFeatureDescription"
+        style="@style/lightText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="This project is solely made to bestow the information we have in our soul upon you .."
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/guide80H"
+        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintStart_toStartOf="@id/guide20V"
+        app:layout_constraintTop_toBottomOf="@id/tvFeatureHeading" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide60H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide80V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide80H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide20V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

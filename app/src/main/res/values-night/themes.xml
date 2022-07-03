@@ -1,0 +1,56 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.AnimusFirst" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/black</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="back" parent="Theme.AnimusFirst">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="primaryButton" parent="Theme.AnimusFirst">
+        <item name="android:backgroundTint">@color/white</item>
+
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="secondaryButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="rippleColor">@color/grey_700</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="tintedIcon" parent="Theme.AnimusFirst">
+        <item name="tint">@color/white</item>
+    </style>
+
+
+    <style name="brandText" parent="Theme.AnimusFirst">
+        <item name="android:textColor">@color/brandColorDark</item>
+    </style>
+
+    <style name="darkText" parent="Theme.AnimusFirst">
+        <item name="android:textColor">@color/grey_200</item>
+        <item name="android:tint">@color/grey_200</item>
+        <item name="fontFamily">@font/hankrnd_bold</item>
+    </style>
+
+    <style name="lightText" parent="Theme.AnimusFirst">
+        <item name="android:textColor">@color/grey_400</item>
+        <item name="android:tint">@color/grey_400</item>
+        <item name="fontFamily">@font/hankrnd_regular</item>
+    </style>
+</resources>

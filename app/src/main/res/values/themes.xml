@@ -1,0 +1,67 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.AnimusFirst" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/brandColorDark</item>
+        <item name="colorPrimaryVariant">@color/brandColorDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="back" parent="Theme.AnimusFirst">
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <style name="primaryButton" parent="Theme.AnimusFirst">
+        <item name="android:backgroundTint">@color/brandColorDark</item>
+        <item name="android:textColor">@color/white</item>
+
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="secondaryButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/brandColorDark</item>
+        <item name="strokeColor">@color/brandColorDark</item>
+        <item name="rippleColor">@color/grey_200</item>
+
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="brandText" parent="Theme.AnimusFirst">
+        <item name="android:textColor">@color/brandColorDark</item>
+    </style>
+
+    <style name="tintedIcon" parent="Theme.AnimusFirst">
+        <item name="tint">@color/brandColorDark</item>
+    </style>
+
+    <style name="otpShape">
+        <item name="cornerSizeTopLeft">10dp</item>
+        <item name="cornerSizeTopRight">10dp</item>
+    </style>
+
+
+    <style name="darkText" parent="Theme.AnimusFirst">
+        <item name="android:textColor">@color/grey_700</item>
+        <item name="android:tint">@color/brandColorDark</item>
+        <item name="fontFamily">@font/hankrnd_bold</item>
+    </style>
+
+    <style name="lightText" parent="Theme.AnimusFirst">
+        <item name="android:textColor">@color/grey_500</item>
+        <item name="android:tint">@color/grey_700</item>
+        <item name="fontFamily">@font/hankrnd_regular</item>
+    </style>
+
+
+</resources>

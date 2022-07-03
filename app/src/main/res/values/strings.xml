@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AnimusFirst</string>
+    <string name="app_label">A N I M U S</string>
+
+    <!-- Strings used in the app descriptions -->
+
+    <string name="tag_line_1">Just A Helping</string>
+    <string name="tag_line_2">Hand,</string>
+    <string name="tag_line_3">Exploring Possibilities..</string>
+    <string name="login">Login</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="mobilenum_confirm">Mobile number login affirms the users and help us to protect our data..</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="edit_text_back">edit text back</string>
+    <string name="screen_draw">Screen Draw</string>
+    <string name="login_bar">login bar</string>
+    <string name="name">Name</string>
+
+    <string name="featureHeading1">Information In Your Hand</string>
+    <string name="featureHeading2">Organise Your Trip And Baggage</string>
+    <string name="featureHeading3">Keep Your Journey Assured</string>
+    <string name="featureHeading4">Find A Helping Hand</string>
+    <string name="featureDescription1">This project is solely made to bestow the information we have in our soul upon you ..</string>
+    <string name="featureDescription2">Created with suggestions and needs of individuals and building confidence among comrades ..</string>
+    <string name="featureDescription3">We have thought carefully and listed the documents as well as plan to support your journey ..</string>
+    <string name="featureDescription4">Your journey is an experience you would never forget. So, find a travel mate share this happy journey ..</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_otp_here">Enter OTP Here</string>
+    <string name="friendly_note_signup">Your Contribution in This Project Gives Us Immense Joy</string>
+    <string name="next">Next</string>
+</resources>
