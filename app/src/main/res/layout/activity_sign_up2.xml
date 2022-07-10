@@ -8,6 +8,19 @@
     tools:context=".Activities.ActivitySignUp2">
 
 
+    <ImageView
+        android:id="@+id/imvScreenHelper"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.58"
+        android:contentDescription="@string/screen_draw"
+        android:src="@drawable/imvsingupdraw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide95V"
+        app:layout_constraintStart_toStartOf="@id/guide55V"
+        app:layout_constraintTop_toTopOf="@id/guide60H" />
+
+
     <TextView
         android:id="@+id/tvAppName"
         style="@style/darkText"
@@ -17,22 +30,356 @@
         android:letterSpacing="0.1"
         android:text="@string/app_label"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@id/guide10H"
+        app:layout_constraintBottom_toBottomOf="@id/guide10H"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+
     <TextView
-        android:id="@+id/tvSubHheading"
-        style="@style/darkText"
+        android:id="@+id/tvSubHeading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/signup2_subheading"
+        android:textSize="14sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide15H" />
+
+
+    <TextView
+        android:id="@+id/tvVANtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/primary_gradient_light"
+        android:backgroundTint="@color/accentColor"
+        android:padding="3dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/visa_application_number"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/etVisaApplicationNumber"
+        app:layout_constraintStart_toStartOf="@id/etVisaApplicationNumber" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etVisaApplicationNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/transparent"
         android:fontFamily="@font/hankrnd_bold"
-        android:letterSpacing="0.1"
-        android:text="@string/app_label"
+        android:hint="@string/visa_application_number"
+        android:inputType="textNoSuggestions"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:textCursorDrawable="@null"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@id/guide10H"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide70V"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide30H" />
+
+    <ImageView
+        style="@style/darkText"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/edit_text_back"
+        android:src="@drawable/ed_backline"
+        app:layout_constraintBottom_toBottomOf="@id/etVisaApplicationNumber"
+        app:layout_constraintEnd_toEndOf="@id/etVisaApplicationNumber"
+        app:layout_constraintStart_toStartOf="@id/etVisaApplicationNumber" />
+
+    <TextView
+        android:id="@+id/tvVADtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/primary_gradient_light"
+        android:backgroundTint="@color/accentColor"
+        android:padding="3dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/visa_applied_date"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/etVisaAppliedDate"
+        app:layout_constraintStart_toStartOf="@id/etVisaAppliedDate" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etVisaAppliedDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:fontFamily="@font/hankrnd_bold"
+        android:hint="@string/visa_applied_date"
+        android:inputType="date"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/guide70V"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etVisaApplicationNumber" />
+
+    <ImageView
+        style="@style/darkText"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/edit_text_back"
+        android:src="@drawable/ed_backline"
+        app:layout_constraintBottom_toBottomOf="@id/etVisaAppliedDate"
+        app:layout_constraintEnd_toEndOf="@id/etVisaAppliedDate"
+        app:layout_constraintStart_toStartOf="@id/etVisaAppliedDate" />
+
+
+    <TextView
+        android:id="@+id/tvBDtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/primary_gradient_light"
+        android:backgroundTint="@color/accentColor"
+        android:padding="3dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/biometrics_date"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/etBioMetricsDate"
+        app:layout_constraintStart_toStartOf="@id/etBioMetricsDate" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etBioMetricsDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:fontFamily="@font/hankrnd_bold"
+        android:hint="@string/biometrics_date"
+        android:inputType="date"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/guide70V"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etVisaAppliedDate" />
+
+    <ImageView
+        style="@style/darkText"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/edit_text_back"
+        android:src="@drawable/ed_backline"
+        app:layout_constraintBottom_toBottomOf="@id/etBioMetricsDate"
+        app:layout_constraintEnd_toEndOf="@id/etBioMetricsDate"
+        app:layout_constraintStart_toStartOf="@id/etBioMetricsDate" />
+
+
+    <TextView
+        android:id="@+id/tvMTDtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/primary_gradient_light"
+        android:backgroundTint="@color/accentColor"
+        android:padding="3dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/medical_test_date"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/etMedicalTestDate"
+        app:layout_constraintStart_toStartOf="@id/etMedicalTestDate" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etMedicalTestDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:fontFamily="@font/hankrnd_bold"
+        android:hint="@string/medical_test_date"
+        android:inputType="date"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/guide70V"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etBioMetricsDate" />
+
+    <ImageView
+        style="@style/darkText"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/edit_text_back"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:src="@drawable/ed_backline"
+        app:layout_constraintBottom_toBottomOf="@id/etMedicalTestDate"
+        app:layout_constraintEnd_toEndOf="@id/etMedicalTestDate"
+        app:layout_constraintStart_toStartOf="@id/etMedicalTestDate" />
+
+
+    <TextView
+        android:id="@+id/tvVStext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/primary_gradient_light"
+        android:backgroundTint="@color/accentColor"
+        android:padding="3dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/visa_status"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/dmVisaStatus"
+        app:layout_constraintStart_toStartOf="@id/dmVisaStatus" />
+
+
+    <!--    <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etVisaStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/transparent"
+            android:cursorVisible="false"
+            android:fontFamily="@font/hankrnd_bold"
+            android:hint="@string/visa_status"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp"
+            android:focusable="false"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="@id/guide70V"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etMedicalTestDate" />-->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dmVisaStatus"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="@id/guide70V"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMedicalTestDate">
+
+        <!-- Inside text input layout add
+              an auto complete text view
+                and make its input type to none-->
+        <AutoCompleteTextView
+            android:id="@+id/acTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/transparent"
+            android:fontFamily="@font/hankrnd_bold"
+            android:inputType="none"
+            android:padding="0dp"
+            android:paddingStart="9dp"
+            android:text="@string/visa_status"
+            android:textColor="?android:textColorHint"
+            android:textSize="14sp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        style="@style/darkText"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/edit_text_back"
+        android:src="@drawable/ed_backline"
+        app:layout_constraintBottom_toBottomOf="@id/dmVisaStatus"
+        app:layout_constraintEnd_toEndOf="@id/guide70V"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAffirm"
+        style="@style/primaryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/hankrnd_bold"
+        android:text="@string/affirm"
+        android:textAllCaps="false"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tvFriendlyNote"
+        app:layout_constraintEnd_toEndOf="@id/guide45V"
+        app:layout_constraintStart_toStartOf="@id/dmVisaStatus"
+        app:layout_constraintTop_toBottomOf="@id/dmVisaStatus" />
+
+
+    <TextView
+        android:id="@+id/tvFriendlyNote"
+        style="@style/lightText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/hankrnd_regular"
+        android:text="@string/friendly_note_signup"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide55V"
+        app:layout_constraintStart_toStartOf="@id/btnAffirm"
+        app:layout_constraintTop_toBottomOf="@id/btnAffirm" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -42,12 +389,63 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.1" />
 
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide20H"
+        android:id="@+id/guide15H"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide60H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide30H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide95V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide80V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide70V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide55V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide45V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

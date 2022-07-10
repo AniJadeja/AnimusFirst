@@ -72,7 +72,7 @@
         android:paddingEnd="0dp"
         android:textCursorDrawable="@null"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintEnd_toEndOf="@id/guide70V"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guide30H" />
 
@@ -104,7 +104,7 @@
         android:paddingEnd="0dp"
         android:textCursorDrawable="@null"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintEnd_toEndOf="@id/guide70V"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etName" />
 
@@ -151,7 +151,7 @@
         android:paddingEnd="0dp"
         android:textCursorDrawable="@null"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintEnd_toEndOf="@id/guide70V"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etMobileNumber" />
 
@@ -183,7 +183,7 @@
         android:paddingEnd="0dp"
         android:textCursorDrawable="@null"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintEnd_toEndOf="@id/guide70V"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etPassword" />
 
@@ -215,7 +215,7 @@
         android:paddingEnd="0dp"
         android:textCursorDrawable="@null"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@id/guide80V"
+        app:layout_constraintEnd_toEndOf="@id/guide70V"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etConfirmPassword" />
 
@@ -280,12 +280,6 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.60" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide45H"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.45" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide30H"
@@ -302,11 +296,11 @@
         app:layout_constraintGuide_percent="0.95" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide80V"
+        android:id="@+id/guide70V"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.80" />
+        app:layout_constraintGuide_percent="0.70" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide55V"

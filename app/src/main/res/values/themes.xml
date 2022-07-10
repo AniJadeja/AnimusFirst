@@ -6,8 +6,8 @@
         <item name="colorPrimaryVariant">@color/brandColorDark</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorSecondary">@color/accentColor</item>
+        <item name="colorSecondaryVariant">@color/accentColorDark</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/white</item>
@@ -16,8 +16,35 @@
 
     </style>
 
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">12sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/hankrnd_bold</item>
+    </style>
+
+
+    <style name="Tab_WithBackground" parent="Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextColor">@color/grey_500</item>
+        <item name="tabIndicatorGravity">center</item>
+        <item name="tabIndicatorColor">@color/brandColorDark</item>
+        <item name="tabIndicator">@drawable/primary_gradient_light</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabIndicatorHeight">30dp</item>
+        <item name="android:tabStripEnabled">true</item>
+        <item name="tabTextAppearance">@style/tab_text</item>
+    </style>
+
+
     <style name="back" parent="Theme.AnimusFirst">
         <item name="android:background">@color/white</item>
+    </style>
+
+
+    <style name="dropDown" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="android:background">@color/white</item>
+
     </style>
 
 
@@ -48,6 +75,15 @@
     <style name="otpShape">
         <item name="cornerSizeTopLeft">10dp</item>
         <item name="cornerSizeTopRight">10dp</item>
+    </style>
+
+    <style name="tipTabLayout">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">8sp</item>
+        <item name="tabSelectedTextColor">@color/brandColorDark</item>
+        <item name="tabTextColor">@color/grey_500</item>
+        <item name="tabIndicator">@drawable/primary_gradient_dark</item>
+
     </style>
 
 

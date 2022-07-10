@@ -29,4 +29,17 @@
     <string name="enter_otp_here">Enter OTP Here</string>
     <string name="friendly_note_signup">Your Contribution in This Project Gives Us Immense Joy</string>
     <string name="next">Next</string>
+    <string name="signup2_subheading">To Protect You From Unknown Sources We Need Some Information ..</string>
+    <string name="visa_application_number">Visa Application Number</string>
+    <string name="visa_applied_date">Visa Applied Date</string>
+    <string name="medical_test_date">Medical Test Date</string>
+    <string name="visa_status">Visa Status</string>
+    <string name="affirm">Affirm</string>
+    <string name="biometrics_date">Biometrics Date</string>
+
+
+    <string-array name="visa_status">
+        <item>Waiting</item>
+        <item>Received</item>
+    </string-array>
 </resources>
